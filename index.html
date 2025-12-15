@@ -1,122 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Honey Fashion's – Premium Saris & Dresses</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey's Fashion - Luxury Indian Women's Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<!-- Intro Animation -->
-<div class="intro-overlay" id="introOverlay">
-    <div class="intro-sparkles" id="introSparkles"></div>
-    <div class="intro-brand-name" id="introBrandName">
-        <span class="brand-text">Honey Fashion's</span>
-        <div class="shimmer-overlay"></div>
-    </div>
-</div>
-
-<!-- Navbar -->
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">Honey Fashion's</div>
-        <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#categories">Categories</a></li>
-            <li><a href="#collection">Collection</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span><span></span><span></span>
+    <!-- Opening Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-sparkles" id="splashSparkles"></div>
+        <div class="splash-brand" id="splashBrand">
+            <h1 class="brand-name">Honey's Fashion</h1>
+            <div class="shimmer-effect"></div>
         </div>
     </div>
-</nav>
 
-<!-- Hero -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1 class="hero-title">Elegant Indian Fashion</h1>
-        <p class="hero-tagline">Grace. Glamour. Tradition.</p>
-        <p class="hero-subtitle">Premium saris & contemporary dresses</p>
-        <div class="hero-buttons">
-            <a href="#collection" class="btn btn-primary">Shop Saris</a>
-            <a href="#collection" class="btn btn-secondary">Explore Dresses</a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Honey's Fashion</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- Categories -->
-<section id="categories" class="categories">
-    <div class="container">
-        <h2 class="section-title">Shop by Category</h2>
-        <div class="categories-grid">
-            <div class="category-card">👗 Saris</div>
-            <div class="category-card">👘 Dresses</div>
-            <div class="category-card">🎉 Festive Wear</div>
-            <div class="category-card">💍 Wedding Wear</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Honey's Fashion</h1>
+            <p class="hero-tagline">Elegance. Tradition. Luxury.</p>
+            <p class="hero-subtitle">Discover premium Indian fashion that celebrates your beauty and heritage</p>
+            <div class="hero-buttons">
+                <a href="#collection" class="btn btn-gold">Shop Now</a>
+                <a href="#collection" class="btn btn-outline">View Collection</a>
+            </div>
         </div>
-    </div>
-</section>
-
-<!-- Collection -->
-<section id="collection" class="collection">
-    <div class="container">
-        <h2 class="section-title">Featured Collection</h2>
-        <div class="products-grid">
-            <div class="product-card">Banarasi Saree</div>
-            <div class="product-card">Designer Lehenga</div>
-            <div class="product-card">Anarkali Dress</div>
+        <div class="hero-image">
+            <div class="hero-placeholder">
+                <span>✨ Premium Indian Fashion ✨</span>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- About -->
-<section id="about" class="about">
-    <div class="container">
-        <h2 class="section-title">Our Story</h2>
-        <p class="about-text">
-            A mom-led boutique celebrating Indian craftsmanship with love and tradition.
-        </p>
-    </div>
-</section>
-
-<!-- Gallery -->
-<section id="gallery" class="gallery">
-    <div class="container">
-        <h2 class="section-title">Instagram Gallery</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">📸</div>
-            <div class="gallery-item">📸</div>
-            <div class="gallery-item">📸</div>
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">👗</div>
+                    <h3>Sarees</h3>
+                    <p>Traditional elegance in every weave</p>
+                    <a href="#collection" class="category-link">Explore →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👘</div>
+                    <h3>Dresses</h3>
+                    <p>Contemporary Indian designs</p>
+                    <a href="#collection" class="category-link">Explore →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎉</div>
+                    <h3>Festive Wear</h3>
+                    <p>Celebrate in style</p>
+                    <a href="#collection" class="category-link">Explore →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💍</div>
+                    <h3>Bridal Collection</h3>
+                    <p>Make your special day unforgettable</p>
+                    <a href="#collection" class="category-link">Explore →</a>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact -->
-<section id="contact" class="contact">
-    <div class="container">
-        <h2 class="section-title">Contact Us</h2>
-        <a href="https://wa.me/1234567890" class="btn btn-primary">Order on WhatsApp</a>
-    </div>
-</section>
+    <!-- Featured Collection -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <h2 class="section-title">Featured Collection</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">Saree 1</div>
+                        <div class="product-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Silk Banarasi Saree</h3>
+                        <p class="product-price">₹8,999</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">Saree 2</div>
+                        <div class="product-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Lehenga Saree</h3>
+                        <p class="product-price">₹12,999</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">Dress 1</div>
+                        <div class="product-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Contemporary Anarkali</h3>
+                        <p class="product-price">₹5,999</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">Dress 2</div>
+                        <div class="product-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Embroidered Gown</h3>
+                        <p class="product-price">₹7,499</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">Festive</div>
+                        <div class="product-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Festive Silk Saree</h3>
+                        <p class="product-price">₹9,999</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">Bridal</div>
+                        <div class="product-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bridal Lehenga Set</h3>
+                        <p class="product-price">₹25,999</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <p>© 2024 Honey Fashion's. Made with ❤️</p>
-</footer>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Absolutely stunning collection! The quality and craftsmanship are exceptional. I felt like a queen in my bridal lehenga."</p>
+                    <p class="testimonial-author">- Priya Sharma</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Honey's Fashion has the most elegant sarees. The attention to detail is remarkable. Highly recommended!"</p>
+                    <p class="testimonial-author">- Anjali Patel</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The festive collection is gorgeous! I received so many compliments at the wedding. Thank you, Honey's Fashion!"</p>
+                    <p class="testimonial-author">- Meera Reddy</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- JS -->
-<script src="script.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Connect With Us</h3>
+                    <p>Have questions about our collections? Want to place a custom order? We'd love to hear from you!</p>
+                    <div class="contact-buttons">
+                        <a href="https://wa.me/1234567890" target="_blank" class="contact-btn whatsapp">
+                            <span>💬</span> Order on WhatsApp
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="contact-btn instagram">
+                            <span>📷</span> Instagram
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Honey's Fashion</h3>
+                    <p>Elegance. Tradition. Luxury.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Honey's Fashion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

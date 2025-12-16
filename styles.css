@@ -21,7 +21,6 @@
     --muted-orange: #FF8C42;
     --text-dark: #2C1810;
     --shadow-gold: rgba(255, 215, 0, 0.5);
-    --shadow-pink: rgba(233, 30, 99, 0.4);
 }
 
 html {
@@ -1151,3 +1150,4 @@ body {
         font-size: 2rem;
     }
 }
+
